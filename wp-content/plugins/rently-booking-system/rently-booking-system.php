@@ -109,10 +109,10 @@ class Rently_Booking_System {
      * Initialize classes
      */
     public function init_classes() {
-        new Rently_Booking_Post_Type();
-        new Rently_Booking_Handler();
-        new Rently_Booking_Ajax();
-        new Rently_Commission_System();
+        Rently_Booking_Post_Type::get_instance();
+        Rently_Booking_Handler::get_instance();
+        Rently_Booking_Ajax::get_instance();
+        Rently_Commission_System::get_instance();
     }
     
     /**

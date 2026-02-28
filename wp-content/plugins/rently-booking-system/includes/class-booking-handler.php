@@ -14,10 +14,19 @@ if (!defined('ABSPATH')) {
 
 class Rently_Booking_Handler {
     
+    private static $instance = null;
+    
+    public static function get_instance() {
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+    
     /**
      * Constructor
      */
-    public function __construct() {
+    private function __construct() {
         add_action('wp_ajax_create_booking', array($this, 'create_booking'));
         add_action('wp_ajax_nopriv_create_booking', array($this, 'create_booking'));
         add_shortcode('rently_booking_form', array($this, 'booking_form_shortcode'));

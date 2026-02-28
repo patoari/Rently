@@ -14,10 +14,19 @@ if (!defined('ABSPATH')) {
 
 class Rently_Booking_Post_Type {
     
+    private static $instance = null;
+    
+    public static function get_instance() {
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+    
     /**
      * Constructor
      */
-    public function __construct() {
+    private function __construct() {
         add_action('init', array($this, 'register_post_type'));
         add_action('add_meta_boxes', array($this, 'add_meta_boxes'));
         add_action('save_post_booking', array($this, 'save_meta_boxes'));
