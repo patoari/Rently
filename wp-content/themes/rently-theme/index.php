@@ -10,10 +10,24 @@ get_header();
 
 <main class="site-main">
     <div class="container">
-        <?php if (have_posts()) : ?>
+        <?php
+        // Query for properties
+        $properties_query = new WP_Query(array(
+            'post_type' => 'property',
+            'posts_per_page' => 12,
+            'post_status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'DESC'
+        ));
+        
+        if ($properties_query->have_posts()) : ?>
             
-            <div class="posts-grid">
-                <?php while (have_posts()) : the_post(); ?>
+            <div class="properties-grid">
+                <?php while ($properties_query->have_posts()) : $properties_query->the_post(); 
+                    $price = get_post_meta(get_the_ID(), '_property_price', true);
+                    $location = get_post_meta(get_the_ID(), '_property_location', true);
+                    $bedrooms = get_post_meta(get_the_ID(), '_property_bedrooms', true);
+                ?>
                     
                     <article id="post-<?php the_ID(); ?>" <?php post_class('post-card'); ?>>
                         <?php if (has_post_thumbnail()) : ?>
