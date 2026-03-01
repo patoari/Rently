@@ -67,6 +67,7 @@ $includes = array(
     '/inc/class-review-db.php',                   // Review database helper
     '/inc/class-analytics-db.php',                // Analytics database helper
     '/inc/class-notification-db.php',             // Notification database helper
+    '/inc/admin-database-page.php',               // Admin database page
 );
 
 foreach ($includes as $file) {
