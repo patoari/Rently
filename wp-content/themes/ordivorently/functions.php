@@ -61,6 +61,7 @@ $includes = array(
     '/inc/property-search.php',
     '/inc/user-roles.php',
     '/inc/template-functions.php',
+    '/inc/class-property-submission-handler.php', // Property submission handler
 );
 
 foreach ($includes as $file) {
