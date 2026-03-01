@@ -1,0 +1,423 @@
+/*
+Theme Name: Ordivorently
+Theme URI: https://ordivorently.com
+Description: Modern property rental theme inspired by contemporary booking platforms. Clean, minimal design with focus on user experience.
+Version: 1.0.0
+Author: Ordivorently Team
+Author URI: https://ordivorently.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ordivorently
+Tags: rental, booking, properties, modern, clean
+*/
+
+/* ========================================
+   CSS RESET & BASE
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FF385C;
+    --primary-dark: #E31C5F;
+    --secondary: #00A699;
+    --dark: #222222;
+    --gray: #717171;
+    --gray-light: #B0B0B0;
+    --border: #DDDDDD;
+    --bg: #F7F7F7;
+    --white: #FFFFFF;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+    --shadow-md: 0 2px 16px rgba(0,0,0,0.12);
+    --shadow-lg: 0 6px 20px rgba(0,0,0,0.2);
+    --radius: 12px;
+    --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--dark);
+    background: var(--white);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.site-header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 16px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.site-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+}
+
+.header-search {
+    flex: 1;
+    max-width: 850px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    padding: 8px 8px 8px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.search-bar:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.search-btn {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.04);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-link {
+    padding: 12px 16px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    background: var(--bg);
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 8px 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.user-menu:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+/* ========================================
+   PROPERTY GRID
+======================================== */
+
+.properties-section {
+    padding: 48px 0;
+}
+
+.section-header {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.property-card {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.property-card:hover {
+    transform: translateY(-4px);
+}
+
+.property-thumbnail {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 12px;
+}
+
+.property-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.property-card:hover .property-thumbnail img {
+    transform: scale(1.05);
+}
+
+.property-category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--white);
+    color: var(--dark);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+}
+
+.property-content {
+    padding: 0 4px;
+}
+
+.property-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.property-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.property-location {
+    font-size: 15px;
+    color: var(--gray);
+    margin-bottom: 8px;
+}
+
+.property-meta {
+    font-size: 15px;
+    color: var(--gray);
+    margin-bottom: 8px;
+}
+
+.property-price {
+    font-size: 15px;
+    color: var(--dark);
+}
+
+.property-price strong {
+    font-weight: 600;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--dark);
+    border: 1px solid var(--dark);
+}
+
+.btn-secondary:hover {
+    background: var(--dark);
+    color: var(--white);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 48px 0 24px;
+    margin-top: 80px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 12px;
+}
+
+.footer-section a {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+    
+    .header-search {
+        display: none;
+    }
+    
+    .properties-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .properties-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
