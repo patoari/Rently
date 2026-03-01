@@ -62,6 +62,11 @@ $includes = array(
     '/inc/user-roles.php',
     '/inc/template-functions.php',
     '/inc/class-property-submission-handler.php', // Property submission handler
+    '/inc/class-database-manager.php',            // Database manager
+    '/inc/class-booking-db.php',                  // Booking database helper
+    '/inc/class-review-db.php',                   // Review database helper
+    '/inc/class-analytics-db.php',                // Analytics database helper
+    '/inc/class-notification-db.php',             // Notification database helper
 );
 
 foreach ($includes as $file) {
