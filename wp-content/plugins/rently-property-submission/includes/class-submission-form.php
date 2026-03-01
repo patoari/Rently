@@ -51,32 +51,58 @@ class Rently_Submission_Form {
                 <div class="form-section">
                     <h2><?php _e('Location', 'rently-property-submission'); ?></h2>
                     
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="property_division"><?php _e('Division', 'rently-property-submission'); ?> *</label>
+                            <select id="property_division" name="property_division" required>
+                                <option value=""><?php _e('Select Division', 'rently-property-submission'); ?></option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="chittagong">Chittagong</option>
+                                <option value="rajshahi">Rajshahi</option>
+                                <option value="khulna">Khulna</option>
+                                <option value="barisal">Barisal</option>
+                                <option value="sylhet">Sylhet</option>
+                                <option value="rangpur">Rangpur</option>
+                                <option value="mymensingh">Mymensingh</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="property_district"><?php _e('District', 'rently-property-submission'); ?> *</label>
+                            <select id="property_district" name="property_district" required>
+                                <option value=""><?php _e('Select District', 'rently-property-submission'); ?></option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="property_thana"><?php _e('Thana/Upazila', 'rently-property-submission'); ?> *</label>
+                            <select id="property_thana" name="property_thana" required>
+                                <option value=""><?php _e('Select Thana', 'rently-property-submission'); ?></option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="property_city"><?php _e('City/Town', 'rently-property-submission'); ?> *</label>
+                            <input type="text" id="property_city" name="property_city" required placeholder="e.g., Gulshan, Banani">
+                        </div>
+                    </div>
+                    
                     <div class="form-group">
                         <label for="property_address"><?php _e('Street Address', 'rently-property-submission'); ?> *</label>
-                        <input type="text" id="property_address" name="property_address" required placeholder="123 Main Street">
+                        <input type="text" id="property_address" name="property_address" required placeholder="House/Flat No, Road No, Block">
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="property_city"><?php _e('City', 'rently-property-submission'); ?> *</label>
-                            <input type="text" id="property_city" name="property_city" required placeholder="New York">
+                            <label for="property_zip"><?php _e('Postal Code', 'rently-property-submission'); ?></label>
+                            <input type="text" id="property_zip" name="property_zip" placeholder="1212">
                         </div>
                         
                         <div class="form-group">
-                            <label for="property_state"><?php _e('State/Province', 'rently-property-submission'); ?></label>
-                            <input type="text" id="property_state" name="property_state" placeholder="NY">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="property_zip"><?php _e('ZIP/Postal Code', 'rently-property-submission'); ?></label>
-                            <input type="text" id="property_zip" name="property_zip" placeholder="10001">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="property_country"><?php _e('Country', 'rently-property-submission'); ?> *</label>
-                            <input type="text" id="property_country" name="property_country" required placeholder="USA">
+                            <label for="property_country"><?php _e('Country', 'rently-property-submission'); ?></label>
+                            <input type="text" id="property_country" name="property_country" value="Bangladesh" readonly>
                         </div>
                     </div>
                 </div>

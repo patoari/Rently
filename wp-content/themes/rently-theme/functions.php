@@ -87,11 +87,23 @@ add_action('wp_enqueue_scripts', 'rently_enqueue_assets');
  * Include Required Files
  */
 require_once RENTLY_THEME_DIR . '/inc/property-post-type.php';
+require_once RENTLY_THEME_DIR . '/inc/property-taxonomy.php';
 require_once RENTLY_THEME_DIR . '/inc/property-meta-boxes.php';
 require_once RENTLY_THEME_DIR . '/inc/user-roles.php';
 require_once RENTLY_THEME_DIR . '/inc/ajax-handlers.php';
 require_once RENTLY_THEME_DIR . '/inc/template-functions.php';
 require_once RENTLY_THEME_DIR . '/inc/widgets.php';
+require_once RENTLY_THEME_DIR . '/inc/property-search.php';
+
+// Include location data if submission plugin is active
+if (function_exists('rently_get_location_data')) {
+    // Location data already loaded
+} else {
+    // Load location data for theme use
+    if (file_exists(WP_PLUGIN_DIR . '/rently-property-submission/includes/location-data.php')) {
+        require_once WP_PLUGIN_DIR . '/rently-property-submission/includes/location-data.php';
+    }
+}
 
 /**
  * Custom Excerpt Length

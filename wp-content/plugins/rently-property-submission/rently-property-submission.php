@@ -34,6 +34,7 @@ class Rently_Property_Submission {
     }
     
     private function includes() {
+        require_once RENTLY_SUBMISSION_DIR . 'includes/location-data.php';
         require_once RENTLY_SUBMISSION_DIR . 'includes/class-submission-form.php';
         require_once RENTLY_SUBMISSION_DIR . 'includes/class-submission-handler.php';
     }
@@ -49,7 +50,8 @@ class Rently_Property_Submission {
         
         wp_localize_script('rently-submission-script', 'rentlySubmission', array(
             'ajaxurl' => admin_url('admin-ajax.php'),
-            'nonce' => wp_create_nonce('rently_submission_nonce')
+            'nonce' => wp_create_nonce('rently_submission_nonce'),
+            'locationData' => rently_get_location_data()
         ));
     }
     

@@ -43,9 +43,11 @@ class Rently_Submission_Handler {
             'description' => wp_kses_post($data['property_description']),
             'type' => sanitize_text_field($data['property_type']),
             'price' => floatval($data['property_price']),
-            'address' => sanitize_text_field($data['property_address']),
+            'division' => sanitize_text_field($data['property_division']),
+            'district' => sanitize_text_field($data['property_district']),
+            'thana' => sanitize_text_field($data['property_thana']),
             'city' => sanitize_text_field($data['property_city']),
-            'state' => sanitize_text_field($data['property_state']),
+            'address' => sanitize_text_field($data['property_address']),
             'zip' => sanitize_text_field($data['property_zip']),
             'country' => sanitize_text_field($data['property_country']),
             'bedrooms' => intval($data['property_bedrooms']),
@@ -62,12 +64,14 @@ class Rently_Submission_Handler {
     private function save_property_meta($property_id, $data) {
         update_post_meta($property_id, '_property_type', $data['type']);
         update_post_meta($property_id, '_property_price', $data['price']);
-        update_post_meta($property_id, '_property_address', $data['address']);
+        update_post_meta($property_id, '_property_division', $data['division']);
+        update_post_meta($property_id, '_property_district', $data['district']);
+        update_post_meta($property_id, '_property_thana', $data['thana']);
         update_post_meta($property_id, '_property_city', $data['city']);
-        update_post_meta($property_id, '_property_state', $data['state']);
+        update_post_meta($property_id, '_property_address', $data['address']);
         update_post_meta($property_id, '_property_zip', $data['zip']);
         update_post_meta($property_id, '_property_country', $data['country']);
-        update_post_meta($property_id, '_property_location', $data['city'] . ', ' . $data['country']);
+        update_post_meta($property_id, '_property_location', $data['city'] . ', ' . ucfirst($data['district']) . ', ' . ucfirst($data['division']));
         update_post_meta($property_id, '_property_bedrooms', $data['bedrooms']);
         update_post_meta($property_id, '_property_bathrooms', $data['bathrooms']);
         update_post_meta($property_id, '_property_guests', $data['guests']);

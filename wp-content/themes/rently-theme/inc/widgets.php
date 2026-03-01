@@ -248,39 +248,123 @@ class Rently_Property_Search_Widget extends WP_Widget {
         
         echo $args['before_widget'];
         echo $args['before_title'] . esc_html($title) . $args['after_title'];
+        
+        $location_data = rently_get_location_data();
         ?>
         
         <form class="property-search-widget" method="get" action="<?php echo esc_url(home_url('/')); ?>">
             <input type="hidden" name="post_type" value="property">
             
             <div class="search-field">
-                <label for="search-location"><?php _e('Location', 'rently-theme'); ?></label>
-                <input type="text" id="search-location" name="location" placeholder="<?php _e('City or Country', 'rently-theme'); ?>">
+                <label for="search-division"><?php _e('Division', 'rently-theme'); ?></label>
+                <select id="search-division" name="division">
+                    <option value=""><?php _e('All Divisions', 'rently-theme'); ?></option>
+                    <?php foreach ($location_data as $key => $division) : ?>
+                        <option value="<?php echo esc_attr($key); ?>" <?php selected(isset($_GET['division']) ? $_GET['division'] : '', $key); ?>>
+                            <?php echo esc_html($division['name']); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            
+            <div class="search-field">
+                <label for="search-district"><?php _e('District', 'rently-theme'); ?></label>
+                <select id="search-district" name="district">
+                    <option value=""><?php _e('All Districts', 'rently-theme'); ?></option>
+                </select>
+            </div>
+            
+            <div class="search-field">
+                <label for="search-thana"><?php _e('Thana', 'rently-theme'); ?></label>
+                <select id="search-thana" name="thana">
+                    <option value=""><?php _e('All Thanas', 'rently-theme'); ?></option>
+                </select>
             </div>
             
             <div class="search-field">
                 <label for="search-bedrooms"><?php _e('Bedrooms', 'rently-theme'); ?></label>
                 <select id="search-bedrooms" name="bedrooms">
                     <option value=""><?php _e('Any', 'rently-theme'); ?></option>
-                    <option value="1">1+</option>
-                    <option value="2">2+</option>
-                    <option value="3">3+</option>
-                    <option value="4">4+</option>
+                    <option value="1" <?php selected(isset($_GET['bedrooms']) ? $_GET['bedrooms'] : '', '1'); ?>>1+</option>
+                    <option value="2" <?php selected(isset($_GET['bedrooms']) ? $_GET['bedrooms'] : '', '2'); ?>>2+</option>
+                    <option value="3" <?php selected(isset($_GET['bedrooms']) ? $_GET['bedrooms'] : '', '3'); ?>>3+</option>
+                    <option value="4" <?php selected(isset($_GET['bedrooms']) ? $_GET['bedrooms'] : '', '4'); ?>>4+</option>
                 </select>
             </div>
             
             <div class="search-field">
                 <label for="search-price-min"><?php _e('Min Price', 'rently-theme'); ?></label>
-                <input type="number" id="search-price-min" name="price_min" placeholder="$0">
+                <input type="number" id="search-price-min" name="price_min" placeholder="$0" value="<?php echo isset($_GET['price_min']) ? esc_attr($_GET['price_min']) : ''; ?>">
             </div>
             
             <div class="search-field">
                 <label for="search-price-max"><?php _e('Max Price', 'rently-theme'); ?></label>
-                <input type="number" id="search-price-max" name="price_max" placeholder="$1000">
+                <input type="number" id="search-price-max" name="price_max" placeholder="$1000" value="<?php echo isset($_GET['price_max']) ? esc_attr($_GET['price_max']) : ''; ?>">
+            </div>
+            
+            <div class="search-field">
+                <label for="search-sort"><?php _e('Sort By', 'rently-theme'); ?></label>
+                <select id="search-sort" name="orderby">
+                    <option value="date" <?php selected(isset($_GET['orderby']) ? $_GET['orderby'] : '', 'date'); ?>><?php _e('Newest First', 'rently-theme'); ?></option>
+                    <option value="price_low" <?php selected(isset($_GET['orderby']) ? $_GET['orderby'] : '', 'price_low'); ?>><?php _e('Price: Low to High', 'rently-theme'); ?></option>
+                    <option value="price_high" <?php selected(isset($_GET['orderby']) ? $_GET['orderby'] : '', 'price_high'); ?>><?php _e('Price: High to Low', 'rently-theme'); ?></option>
+                    <option value="title" <?php selected(isset($_GET['orderby']) ? $_GET['orderby'] : '', 'title'); ?>><?php _e('Name: A-Z', 'rently-theme'); ?></option>
+                </select>
             </div>
             
             <button type="submit" class="btn btn-primary"><?php _e('Search', 'rently-theme'); ?></button>
         </form>
+        
+        <script>
+        jQuery(document).ready(function($) {
+            const locationData = <?php echo json_encode($location_data); ?>;
+            const selectedDivision = '<?php echo isset($_GET['division']) ? esc_js($_GET['division']) : ''; ?>';
+            const selectedDistrict = '<?php echo isset($_GET['district']) ? esc_js($_GET['district']) : ''; ?>';
+            
+            function updateDistricts(division, selectDistrict = '') {
+                const districtSelect = $('#search-district');
+                districtSelect.html('<option value="">All Districts</option>');
+                $('#search-thana').html('<option value="">All Thanas</option>');
+                
+                if (division && locationData[division]) {
+                    $.each(locationData[division].districts, function(key, district) {
+                        const selected = key === selectDistrict ? ' selected' : '';
+                        districtSelect.append(`<option value="${key}"${selected}>${district.name}</option>`);
+                    });
+                    
+                    if (selectDistrict) {
+                        updateThanas(division, selectDistrict);
+                    }
+                }
+            }
+            
+            function updateThanas(division, district) {
+                const thanaSelect = $('#search-thana');
+                thanaSelect.html('<option value="">All Thanas</option>');
+                
+                if (division && district && locationData[division].districts[district]) {
+                    const thanas = locationData[division].districts[district].thanas;
+                    $.each(thanas, function(index, thana) {
+                        const thanaName = thana.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                        thanaSelect.append(`<option value="${thana}">${thanaName}</option>`);
+                    });
+                }
+            }
+            
+            if (selectedDivision) {
+                updateDistricts(selectedDivision, selectedDistrict);
+            }
+            
+            $('#search-division').on('change', function() {
+                updateDistricts($(this).val());
+            });
+            
+            $('#search-district').on('change', function() {
+                const division = $('#search-division').val();
+                updateThanas(division, $(this).val());
+            });
+        });
+        </script>
         
         <?php
         echo $args['after_widget'];

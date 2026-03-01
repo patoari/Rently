@@ -1,5 +1,41 @@
 jQuery(document).ready(function($) {
     
+    // Location data from PHP
+    const locationData = rentlySubmission.locationData;
+    
+    // Division change handler
+    $('#property_division').on('change', function() {
+        const division = $(this).val();
+        const districtSelect = $('#property_district');
+        const thanaSelect = $('#property_thana');
+        
+        districtSelect.html('<option value="">Select District</option>');
+        thanaSelect.html('<option value="">Select Thana</option>');
+        
+        if (division && locationData[division]) {
+            $.each(locationData[division].districts, function(key, district) {
+                districtSelect.append(`<option value="${key}">${district.name}</option>`);
+            });
+        }
+    });
+    
+    // District change handler
+    $('#property_district').on('change', function() {
+        const division = $('#property_division').val();
+        const district = $(this).val();
+        const thanaSelect = $('#property_thana');
+        
+        thanaSelect.html('<option value="">Select Thana</option>');
+        
+        if (division && district && locationData[division].districts[district]) {
+            const thanas = locationData[division].districts[district].thanas;
+            $.each(thanas, function(index, thana) {
+                const thanaName = thana.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                thanaSelect.append(`<option value="${thana}">${thanaName}</option>`);
+            });
+        }
+    });
+    
     // Image preview
     $('#property_images').on('change', function(e) {
         const files = e.target.files;
