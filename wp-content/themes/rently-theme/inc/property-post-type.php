@@ -50,7 +50,12 @@ function rently_register_property_post_type() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array('slug' => 'property'),
+        'rewrite'            => array(
+            'slug' => 'properties',
+            'with_front' => false,
+            'pages' => true,
+            'feeds' => true,
+        ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
