@@ -91,6 +91,7 @@ require_once RENTLY_THEME_DIR . '/inc/property-meta-boxes.php';
 require_once RENTLY_THEME_DIR . '/inc/user-roles.php';
 require_once RENTLY_THEME_DIR . '/inc/ajax-handlers.php';
 require_once RENTLY_THEME_DIR . '/inc/template-functions.php';
+require_once RENTLY_THEME_DIR . '/inc/widgets.php';
 
 /**
  * Custom Excerpt Length
