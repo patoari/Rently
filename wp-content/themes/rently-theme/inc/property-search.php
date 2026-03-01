@@ -14,6 +14,16 @@ function rently_property_search_query($query) {
     if (!is_admin() && $query->is_main_query() && $query->get('post_type') === 'property') {
         
         $meta_query = array('relation' => 'AND');
+        $tax_query = array();
+        
+        // Category filter
+        if (!empty($_GET['property_category'])) {
+            $tax_query[] = array(
+                'taxonomy' => 'property_category',
+                'field' => 'slug',
+                'terms' => sanitize_text_field($_GET['property_category'])
+            );
+        }
         
         // Division filter
         if (!empty($_GET['division'])) {
@@ -75,6 +85,10 @@ function rently_property_search_query($query) {
         
         if (count($meta_query) > 1) {
             $query->set('meta_query', $meta_query);
+        }
+        
+        if (!empty($tax_query)) {
+            $query->set('tax_query', $tax_query);
         }
         
         // Sorting

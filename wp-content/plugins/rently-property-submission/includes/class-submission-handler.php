@@ -28,6 +28,11 @@ class Rently_Submission_Handler {
             wp_send_json_error(array('message' => __('Failed to create property.', 'rently-property-submission')));
         }
         
+        // Set property category
+        if (!empty($property_data['category'])) {
+            wp_set_object_terms($property_id, intval($property_data['category']), 'property_category');
+        }
+        
         $this->save_property_meta($property_id, $property_data);
         $this->handle_image_uploads($property_id);
         
@@ -41,6 +46,7 @@ class Rently_Submission_Handler {
         return array(
             'title' => sanitize_text_field($data['property_title']),
             'description' => wp_kses_post($data['property_description']),
+            'category' => isset($data['property_category']) ? intval($data['property_category']) : 0,
             'type' => sanitize_text_field($data['property_type']),
             'price' => floatval($data['property_price']),
             'division' => sanitize_text_field($data['property_division']),

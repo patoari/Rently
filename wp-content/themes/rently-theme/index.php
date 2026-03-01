@@ -35,6 +35,12 @@ get_header();
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_post_thumbnail('medium'); ?>
                                 </a>
+                                <?php
+                                $categories = get_the_terms(get_the_ID(), 'property_category');
+                                if ($categories && !is_wp_error($categories)) :
+                                ?>
+                                    <span class="property-category-badge"><?php echo esc_html($categories[0]->name); ?></span>
+                                <?php endif; ?>
                             </div>
                         <?php endif; ?>
                         

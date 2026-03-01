@@ -256,6 +256,21 @@ class Rently_Property_Search_Widget extends WP_Widget {
             <input type="hidden" name="post_type" value="property">
             
             <div class="search-field">
+                <label for="search-category"><?php _e('Category', 'rently-theme'); ?></label>
+                <select id="search-category" name="property_category">
+                    <option value=""><?php _e('All Categories', 'rently-theme'); ?></option>
+                    <?php
+                    $categories = rently_get_property_categories();
+                    foreach ($categories as $category) :
+                    ?>
+                        <option value="<?php echo esc_attr($category->slug); ?>" <?php selected(isset($_GET['property_category']) ? $_GET['property_category'] : '', $category->slug); ?>>
+                            <?php echo esc_html($category->name); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            
+            <div class="search-field">
                 <label for="search-division"><?php _e('Division', 'rently-theme'); ?></label>
                 <select id="search-division" name="division">
                     <option value=""><?php _e('All Divisions', 'rently-theme'); ?></option>

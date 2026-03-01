@@ -30,14 +30,17 @@ class Rently_Submission_Form {
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="property_type"><?php _e('Property Type', 'rently-property-submission'); ?> *</label>
-                            <select id="property_type" name="property_type" required>
-                                <option value=""><?php _e('Select Type', 'rently-property-submission'); ?></option>
-                                <option value="apartment"><?php _e('Apartment', 'rently-property-submission'); ?></option>
-                                <option value="house"><?php _e('House', 'rently-property-submission'); ?></option>
-                                <option value="villa"><?php _e('Villa', 'rently-property-submission'); ?></option>
-                                <option value="condo"><?php _e('Condo', 'rently-property-submission'); ?></option>
-                                <option value="studio"><?php _e('Studio', 'rently-property-submission'); ?></option>
+                            <label for="property_category"><?php _e('Property Category', 'rently-property-submission'); ?> *</label>
+                            <select id="property_category" name="property_category" required>
+                                <option value=""><?php _e('Select Category', 'rently-property-submission'); ?></option>
+                                <?php
+                                $categories = function_exists('rently_get_property_categories') ? rently_get_property_categories() : array();
+                                foreach ($categories as $category) :
+                                ?>
+                                    <option value="<?php echo esc_attr($category->term_id); ?>">
+                                        <?php echo esc_html($category->name); ?>
+                                    </option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         
