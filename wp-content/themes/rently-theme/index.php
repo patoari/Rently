@@ -29,34 +29,42 @@ get_header();
                     $bedrooms = get_post_meta(get_the_ID(), '_property_bedrooms', true);
                 ?>
                     
-                    <article id="post-<?php the_ID(); ?>" <?php post_class('post-card'); ?>>
+                    <article id="property-<?php the_ID(); ?>" <?php post_class('property-card'); ?>>
                         <?php if (has_post_thumbnail()) : ?>
-                            <div class="post-thumbnail">
+                            <div class="property-thumbnail">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_post_thumbnail('medium'); ?>
                                 </a>
                             </div>
                         <?php endif; ?>
                         
-                        <div class="post-content">
-                            <h2 class="post-title">
+                        <div class="property-content">
+                            <h2 class="property-title">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a>
                             </h2>
                             
-                            <div class="post-meta">
-                                <span class="post-date">
-                                    <?php echo get_the_date(); ?>
-                                </span>
+                            <?php if ($location) : ?>
+                                <div class="property-location">
+                                    <span>📍 <?php echo esc_html($location); ?></span>
+                                </div>
+                            <?php endif; ?>
+                            
+                            <div class="property-meta">
+                                <?php if ($bedrooms) : ?>
+                                    <span class="bedrooms">🛏️ <?php echo esc_html($bedrooms); ?> Bedrooms</span>
+                                <?php endif; ?>
                             </div>
                             
-                            <div class="post-excerpt">
-                                <?php the_excerpt(); ?>
-                            </div>
+                            <?php if ($price) : ?>
+                                <div class="property-price">
+                                    $<?php echo number_format($price, 2); ?> / night
+                                </div>
+                            <?php endif; ?>
                             
                             <a href="<?php the_permalink(); ?>" class="btn btn-primary">
-                                <?php _e('Read More', 'rently-theme'); ?>
+                                <?php _e('View Details', 'rently-theme'); ?>
                             </a>
                         </div>
                     </article>
@@ -65,6 +73,7 @@ get_header();
             </div>
             
             <?php
+            wp_reset_postdata();
             the_posts_pagination(array(
                 'mid_size'  => 2,
                 'prev_text' => __('← Previous', 'rently-theme'),
@@ -74,9 +83,9 @@ get_header();
             
         <?php else : ?>
             
-            <div class="no-posts">
-                <h2><?php _e('Nothing Found', 'rently-theme'); ?></h2>
-                <p><?php _e('Sorry, no posts matched your criteria.', 'rently-theme'); ?></p>
+            <div class="no-properties">
+                <h2><?php _e('No Properties Found', 'rently-theme'); ?></h2>
+                <p><?php _e('Sorry, no properties are available at the moment.', 'rently-theme'); ?></p>
             </div>
             
         <?php endif; ?>
