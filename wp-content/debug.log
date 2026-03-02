@@ -1,0 +1,172 @@
+[01-Mar-2026 21:14:32 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[01-Mar-2026 21:14:36 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[01-Mar-2026 21:15:02 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[01-Mar-2026 21:25:38 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[01-Mar-2026 21:26:11 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[01-Mar-2026 21:54:56 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[01-Mar-2026 23:21:45 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[01-Mar-2026 23:55:22 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:09:29 UTC] Automatic updates starting...
+[02-Mar-2026 05:09:31 UTC] Automatic updates complete.
+[02-Mar-2026 05:36:46 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:49:03 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 05:49:03 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action, nonce
+[02-Mar-2026 05:49:03 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 05:49:03 UTC] User ID: 2, Post ID: 0
+[02-Mar-2026 05:49:03 UTC] Creating new property
+[02-Mar-2026 05:49:03 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 05:49:03 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action
+[02-Mar-2026 05:49:03 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 05:49:03 UTC] User ID: 2, Post ID: 0
+[02-Mar-2026 05:49:03 UTC] Creating new property
+[02-Mar-2026 05:49:03 UTC] Property saved with ID: 38
+[02-Mar-2026 05:49:03 UTC] Property saved with ID: 39
+[02-Mar-2026 05:49:03 UTC] Saved meta: price_per_night = 200
+[02-Mar-2026 05:49:03 UTC] Saved meta: location = Dhaka
+[02-Mar-2026 05:49:03 UTC] Saved meta: price_per_night = 200
+[02-Mar-2026 05:49:03 UTC] Saved meta: address = adf
+[02-Mar-2026 05:49:03 UTC] Saved meta: location = Dhaka
+[02-Mar-2026 05:49:03 UTC] Saved meta: bedrooms = 2
+[02-Mar-2026 05:49:03 UTC] Saved meta: bathrooms = 2
+[02-Mar-2026 05:49:03 UTC] Saved meta: max_guests = 6
+[02-Mar-2026 05:49:03 UTC] Saved meta: address = adf
+[02-Mar-2026 05:49:03 UTC] Saved meta: bedrooms = 2
+[02-Mar-2026 05:49:03 UTC] Saved meta: bathrooms = 2
+[02-Mar-2026 05:49:03 UTC] Saved meta: max_guests = 6
+[02-Mar-2026 05:49:03 UTC] Saved meta: property_type = villa
+[02-Mar-2026 05:49:03 UTC] Saved meta: property_type = villa
+[02-Mar-2026 05:49:03 UTC] Saved meta: rules = 
+[02-Mar-2026 05:49:03 UTC] Saved meta: rules = 
+[02-Mar-2026 05:49:03 UTC] Saved amenities: wifi, ac, kitchen, tv, elevator, balcony
+[02-Mar-2026 05:49:03 UTC] Saved amenities: wifi, ac, kitchen, tv, elevator, balcony
+[02-Mar-2026 05:49:03 UTC] Set featured image: 31
+[02-Mar-2026 05:49:03 UTC] Saved gallery IDs: 34,36
+[02-Mar-2026 05:49:03 UTC] Property submission successful!
+[02-Mar-2026 05:49:03 UTC] Set featured image: 31
+[02-Mar-2026 05:49:03 UTC] Saved gallery IDs: 34,36
+[02-Mar-2026 05:49:03 UTC] Property submission successful!
+[02-Mar-2026 05:49:05 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:49:05 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:56:23 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 05:56:23 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action
+[02-Mar-2026 05:56:23 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 05:56:23 UTC] User ID: 2, Post ID: 0
+[02-Mar-2026 05:56:23 UTC] Creating new property
+[02-Mar-2026 05:56:23 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 05:56:23 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action, nonce
+[02-Mar-2026 05:56:23 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 05:56:23 UTC] User ID: 2, Post ID: 0
+[02-Mar-2026 05:56:23 UTC] Creating new property
+[02-Mar-2026 05:56:23 UTC] Property saved with ID: 41
+[02-Mar-2026 05:56:23 UTC] Property saved with ID: 42
+[02-Mar-2026 05:56:23 UTC] Saved meta: price_per_night = 1500
+[02-Mar-2026 05:56:23 UTC] Saved meta: price_per_night = 1500
+[02-Mar-2026 05:56:23 UTC] Saved meta: location = Cox's Bazar
+[02-Mar-2026 05:56:23 UTC] Saved meta: location = Cox's Bazar
+[02-Mar-2026 05:56:23 UTC] Saved meta: address = Inani
+[02-Mar-2026 05:56:23 UTC] Saved meta: bedrooms = 3
+[02-Mar-2026 05:56:23 UTC] Saved meta: address = Inani
+[02-Mar-2026 05:56:23 UTC] Saved meta: bathrooms = 2
+[02-Mar-2026 05:56:23 UTC] Saved meta: bedrooms = 3
+[02-Mar-2026 05:56:23 UTC] Saved meta: bathrooms = 2
+[02-Mar-2026 05:56:23 UTC] Saved meta: max_guests = 10
+[02-Mar-2026 05:56:23 UTC] Saved meta: max_guests = 10
+[02-Mar-2026 05:56:23 UTC] Saved meta: property_type = cottage
+[02-Mar-2026 05:56:23 UTC] Saved meta: property_type = cottage
+[02-Mar-2026 05:56:23 UTC] Saved meta: rules = 
+[02-Mar-2026 05:56:23 UTC] Saved meta: rules = 
+[02-Mar-2026 05:56:23 UTC] Saved amenities: wifi, kitchen, parking, tv, pool, balcony
+[02-Mar-2026 05:56:23 UTC] Saved amenities: wifi, kitchen, parking, tv, pool, balcony
+[02-Mar-2026 05:56:23 UTC] Set featured image: 40
+[02-Mar-2026 05:56:23 UTC] Set featured image: 40
+[02-Mar-2026 05:56:23 UTC] Saved gallery IDs: 40
+[02-Mar-2026 05:56:23 UTC] Property submission successful!
+[02-Mar-2026 05:56:23 UTC] Saved gallery IDs: 40
+[02-Mar-2026 05:56:23 UTC] Property submission successful!
+[02-Mar-2026 05:56:25 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:56:25 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:56:47 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:56:47 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:57:11 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:57:18 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:57:18 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:58:21 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:58:30 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 05:58:40 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 06:04:07 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 06:04:07 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action, nonce
+[02-Mar-2026 06:04:07 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 06:04:07 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 06:04:07 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action
+[02-Mar-2026 06:04:07 UTC] User ID: 2, Post ID: 0
+[02-Mar-2026 06:04:07 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 06:04:07 UTC] User ID: 2, Post ID: 0
+[02-Mar-2026 06:04:07 UTC] Creating new property
+[02-Mar-2026 06:04:07 UTC] Creating new property
+[02-Mar-2026 06:04:07 UTC] Property saved with ID: 45
+[02-Mar-2026 06:04:07 UTC] Property saved with ID: 46
+[02-Mar-2026 06:04:07 UTC] Saved meta: price_per_night = 2000
+[02-Mar-2026 06:04:07 UTC] Saved meta: price_per_night = 2000
+[02-Mar-2026 06:04:07 UTC] Saved meta: location = Dhaka
+[02-Mar-2026 06:04:07 UTC] Saved meta: location = Dhaka
+[02-Mar-2026 06:04:07 UTC] Saved meta: address = gazipur
+[02-Mar-2026 06:04:07 UTC] Saved meta: address = gazipur
+[02-Mar-2026 06:04:07 UTC] Saved meta: bedrooms = 2
+[02-Mar-2026 06:04:07 UTC] Saved meta: bedrooms = 2
+[02-Mar-2026 06:04:07 UTC] Saved meta: bathrooms = 1
+[02-Mar-2026 06:04:07 UTC] Saved meta: bathrooms = 1
+[02-Mar-2026 06:04:07 UTC] Saved meta: max_guests = 4
+[02-Mar-2026 06:04:07 UTC] Saved meta: max_guests = 4
+[02-Mar-2026 06:04:07 UTC] Saved meta: property_type = villa
+[02-Mar-2026 06:04:07 UTC] Saved meta: property_type = villa
+[02-Mar-2026 06:04:07 UTC] Saved meta: rules = 
+[02-Mar-2026 06:04:07 UTC] Saved meta: rules = 
+[02-Mar-2026 06:04:07 UTC] Saved amenities: wifi, ac, kitchen, parking, tv, pool, gym, balcony
+[02-Mar-2026 06:04:07 UTC] Saved amenities: wifi, ac, kitchen, parking, tv, pool, gym, balcony
+[02-Mar-2026 06:04:07 UTC] Set featured image: 44
+[02-Mar-2026 06:04:07 UTC] Set featured image: 44
+[02-Mar-2026 06:04:07 UTC] Saved gallery IDs: 44
+[02-Mar-2026 06:04:07 UTC] Property submission successful!
+[02-Mar-2026 06:04:07 UTC] Saved gallery IDs: 44
+[02-Mar-2026 06:04:07 UTC] Property submission successful!
+[02-Mar-2026 06:04:08 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 06:04:08 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 06:04:29 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 06:04:29 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131
+[02-Mar-2026 06:10:21 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 06:10:21 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action
+[02-Mar-2026 06:10:21 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 06:10:21 UTC] User ID: 1, Post ID: 0
+[02-Mar-2026 06:10:21 UTC] Creating new property
+[02-Mar-2026 06:10:21 UTC] Property saved with ID: 48
+[02-Mar-2026 06:10:21 UTC] Saved meta: price_per_night = 2200
+[02-Mar-2026 06:10:21 UTC] Saved meta: location = Dhaka
+[02-Mar-2026 06:10:21 UTC] Saved meta: address = Gulsan, Dhaka
+[02-Mar-2026 06:10:21 UTC] Saved meta: bedrooms = 3
+[02-Mar-2026 06:10:21 UTC] Saved meta: bathrooms = 2
+[02-Mar-2026 06:10:21 UTC] Saved meta: max_guests = 8
+[02-Mar-2026 06:10:21 UTC] Saved meta: property_type = apartment
+[02-Mar-2026 06:10:21 UTC] Saved meta: rules = 
+[02-Mar-2026 06:10:21 UTC] Saved amenities: wifi, ac, kitchen, parking, tv, washer, elevator, balcony
+[02-Mar-2026 06:10:21 UTC] Set featured image: 29
+[02-Mar-2026 06:10:21 UTC] Saved gallery IDs: 29
+[02-Mar-2026 06:10:21 UTC] Property submission successful!
+[02-Mar-2026 06:10:21 UTC] === ENHANCED HOST FORM SUBMISSION ===
+[02-Mar-2026 06:10:21 UTC] POST keys: rently_host_nonce, _wp_http_referer, post_id, featured_image_id, gallery_ids, title, content, property_type, location, price_per_night, address, bedrooms, bathrooms, max_guests, amenities, rules, terms_accepted, action, nonce
+[02-Mar-2026 06:10:21 UTC] Nonce verified via rently_host_nonce
+[02-Mar-2026 06:10:21 UTC] User ID: 1, Post ID: 0
+[02-Mar-2026 06:10:21 UTC] Creating new property
+[02-Mar-2026 06:10:21 UTC] Property saved with ID: 49
+[02-Mar-2026 06:10:21 UTC] Saved meta: price_per_night = 2200
+[02-Mar-2026 06:10:21 UTC] Saved meta: location = Dhaka
+[02-Mar-2026 06:10:21 UTC] Saved meta: address = Gulsan, Dhaka
+[02-Mar-2026 06:10:21 UTC] Saved meta: bedrooms = 3
+[02-Mar-2026 06:10:21 UTC] Saved meta: bathrooms = 2
+[02-Mar-2026 06:10:21 UTC] Saved meta: max_guests = 8
+[02-Mar-2026 06:10:21 UTC] Saved meta: property_type = apartment
+[02-Mar-2026 06:10:21 UTC] Saved meta: rules = 
+[02-Mar-2026 06:10:21 UTC] Saved amenities: wifi, ac, kitchen, parking, tv, washer, elevator, balcony
+[02-Mar-2026 06:10:21 UTC] Set featured image: 29
+[02-Mar-2026 06:10:21 UTC] Saved gallery IDs: 29
+[02-Mar-2026 06:10:21 UTC] Property submission successful!
+[02-Mar-2026 06:10:21 UTC] PHP Deprecated:  File Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in C:\Users\32161\Downloads\xamp\htdocs\rently\wp-includes\functions.php on line 6131

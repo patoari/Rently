@@ -1,0 +1,141 @@
+.rently-breadcrumb {
+    padding: 12px 0;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.rently-breadcrumb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.rently-breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+}
+
+.rently-breadcrumb-item a {
+    color: #0073aa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.rently-breadcrumb-item a:hover {
+    color: #005a87;
+    text-decoration: underline;
+}
+
+.rently-breadcrumb-item.current {
+    color: #333;
+    font-weight: 500;
+}
+
+.rently-breadcrumb-separator {
+    color: #999;
+    margin: 0 4px;
+    user-select: none;
+}
+
+/* Compact Style */
+.rently-breadcrumb.compact {
+    padding: 8px 0;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.rently-breadcrumb.compact .rently-breadcrumb-list {
+    gap: 6px;
+}
+
+/* Light Background Style */
+.rently-breadcrumb.light-bg {
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+/* Dark Style */
+.rently-breadcrumb.dark {
+    background: #2c3e50;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.rently-breadcrumb.dark .rently-breadcrumb-item {
+    color: #ecf0f1;
+}
+
+.rently-breadcrumb.dark .rently-breadcrumb-item a {
+    color: #3498db;
+}
+
+.rently-breadcrumb.dark .rently-breadcrumb-item a:hover {
+    color: #5dade2;
+}
+
+.rently-breadcrumb.dark .rently-breadcrumb-item.current {
+    color: white;
+}
+
+.rently-breadcrumb.dark .rently-breadcrumb-separator {
+    color: #95a5a6;
+}
+
+/* Arrow Separator Style */
+.rently-breadcrumb.arrow-separator .rently-breadcrumb-separator::before {
+    content: '→';
+}
+
+/* Slash Separator Style */
+.rently-breadcrumb.slash-separator .rently-breadcrumb-separator::before {
+    content: '/';
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rently-breadcrumb {
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    
+    .rently-breadcrumb-list {
+        gap: 6px;
+    }
+    
+    .rently-breadcrumb-separator {
+        margin: 0 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rently-breadcrumb {
+        font-size: 12px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .rently-breadcrumb-list {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Accessibility */
+.rently-breadcrumb-item a:focus {
+    outline: 2px solid #0073aa;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Print styles */
+@media print {
+    .rently-breadcrumb {
+        display: none;
+    }
+}

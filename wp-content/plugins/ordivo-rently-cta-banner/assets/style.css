@@ -1,0 +1,160 @@
+.rently-cta-banner {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0073aa;
+    overflow: hidden;
+}
+
+.rently-cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 115, 170, 0.9) 0%, rgba(0, 90, 135, 0.9) 100%);
+    z-index: 1;
+}
+
+.rently-cta-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+
+.rently-cta-content {
+    color: white;
+}
+
+.rently-cta-align-center {
+    text-align: center;
+}
+
+.rently-cta-align-left {
+    text-align: left;
+}
+
+.rently-cta-align-right {
+    text-align: right;
+}
+
+.rently-cta-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rently-cta-subtitle {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 700px;
+}
+
+.rently-cta-align-center .rently-cta-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rently-cta-button {
+    display: inline-block;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rently-cta-button-primary {
+    background: white;
+    color: #0073aa;
+}
+
+.rently-cta-button-primary:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rently-cta-button-secondary {
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+}
+
+.rently-cta-button-secondary:hover {
+    background: white;
+    color: #0073aa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rently-cta-button-success {
+    background: #27ae60;
+    color: white;
+}
+
+.rently-cta-button-success:hover {
+    background: #229954;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .rently-cta-banner {
+        min-height: 300px;
+    }
+    
+    .rently-cta-container {
+        padding: 40px 20px;
+    }
+    
+    .rently-cta-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .rently-cta-subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .rently-cta-button {
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rently-cta-title {
+        font-size: 28px;
+    }
+    
+    .rently-cta-subtitle {
+        font-size: 15px;
+    }
+    
+    .rently-cta-button {
+        padding: 12px 25px;
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}

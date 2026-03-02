@@ -1,0 +1,140 @@
+.rently-bookings-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin: 20px 0 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 4px solid #0073aa;
+}
+
+.stat-card.pending {
+    border-left-color: #f0ad4e;
+}
+
+.stat-card.confirmed {
+    border-left-color: #5cb85c;
+}
+
+.stat-card.completed {
+    border-left-color: #0073aa;
+}
+
+.stat-card.cancelled {
+    border-left-color: #d9534f;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #23282d;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rently-bookings-filters {
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.rently-bookings-filters a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #0073aa;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.rently-bookings-filters a.current {
+    color: #000;
+    border-bottom-color: #0073aa;
+    font-weight: 600;
+}
+
+.rently-bookings-filters a:hover {
+    color: #005a87;
+}
+
+.booking-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-confirmed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-completed {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-cancelled {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.payment-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.payment-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.payment-paid {
+    background: #d4edda;
+    color: #155724;
+}
+
+.payment-refunded {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.booking-status-update {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+    .rently-bookings-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .rently-bookings-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

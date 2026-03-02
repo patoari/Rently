@@ -1,0 +1,6 @@
+.rently-wishlist-toggle{background:transparent;border:none;cursor:pointer;padding:6px;display:inline-flex;align-items:center}
+.rently-heart{width:22px;height:22px;display:inline-block;background-repeat:no-repeat;background-position:center;background-size:contain}
+.rently-heart.empty{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23FF385C" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>')}
+.rently-heart.filled{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF385C"><path d="M12 21s-8.5-7.1-11-9.6A5.5 5.5 0 0 1 6 3.9 5.2 5.2 0 0 1 12 7.1a5.2 5.2 0 0 1 6-3.2 5.5 5.5 0 0 1 5 7.5C20.5 13.9 12 21 12 21z"/></svg>')}
+.rently-wishlist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.rently-wishlist-item{background:#fff;border-radius:8px;padding:8px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
